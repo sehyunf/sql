@@ -1,0 +1,58 @@
+{
+	"folders": {},
+	"connections": {
+		"oracle_thin-195269ec030-1db27d50e6efca4f": {
+			"provider": "oracle",
+			"driver": "oracle_thin",
+			"name": "localhost",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "1521",
+				"database": "XE",
+				"url": "jdbc:oracle:thin:@//localhost:1521/XE",
+				"home": "C:\\app\\PC\\product\\21c\\dbhomeXE",
+				"type": "dev",
+				"provider-properties": {
+					"show-only-one-schema@": "false",
+					"@dbeaver-check-schema-content@": "false",
+					"@dbeaver-always-show-dba@": "false",
+					"@dbeaver-always-use-dba-views@": "false",
+					"@dbeaver-meta-use-sys-schema@": "false",
+					"@dbeaver-meta-use-simple-constraints@": "false",
+					"@dbeaver-use-rule-hint@": "false",
+					"@dbeaver-use-meta-optimizer@": "true",
+					"@dbeaver-meta-use-alternative-table-query@": "false",
+					"oracle.meta-search-in-synonyms": "false",
+					"oracle.show-date-as-date": "false",
+					"@dbeaver-connection-type@": "BASIC",
+					"@dbeaver-sid-service@": "SERVICE"
+				},
+				"auth-model": "oracle_native",
+				"handlers": {}
+			}
+		}
+	},
+	"virtual-models": {
+		"oracle_thin-195269ec030-1db27d50e6efca4f": {
+			"HR": {
+				"@properties": {
+					"erd.diagram.state": {
+						"serialized": "\u003cdiagram version\u003d\"1\" name\u003d\"empty\" time\u003d\"202502211708\"\u003e\u003centities\u003e\u003cdata-source id\u003d\"oracle_thin-195269ec030-1db27d50e6efca4f\"\u003e\u003centity id\u003d\"1\" name\u003d\"TBL_ORDER\" fq-name\u003d\"HR.TBL_ORDER\" order\u003d\"0\" x\u003d\"123\" y\u003d\"310\"\u003e\u003cpath name\u003d\"HR\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"2\" name\u003d\"TBL_USER\" fq-name\u003d\"HR.TBL_USER\" order\u003d\"1\" x\u003d\"337\" y\u003d\"320\"\u003e\u003cpath name\u003d\"HR\"/\u003e\u003c/entity\u003e\u003c/data-source\u003e\u003c/entities\u003e\u003crelations\u003e\u003crelation name\u003d\"FK_ORDER_USER\" fq-name\u003d\"HR.TBL_ORDER.FK_ORDER_USER\" type\u003d\"fk\" pk-ref\u003d\"2\" fk-ref\u003d\"1\"/\u003e\u003c/relations\u003e\u003c/diagram\u003e"
+					}
+				}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}
