@@ -261,10 +261,3 @@ CREATE TABLE TBL_DILIVERY(
 );
 
 
-
-
-
-
-
-
-
